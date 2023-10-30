@@ -1,0 +1,497 @@
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 0), reused 4 (delta 0),pack-reused 0
+Receiving objects: 100% (7/7), done.
+
+C:\Users\Lenovo\Desktop\Demo4\20-10-23>git add C:\Users\Lenovo\Desktop\Demo4\20-10-23\Temp1.txt
+
+C:\Users\Lenovo\Desktop\Demo4\20-10-23>git add C:\Users\Lenovo\Desktop\Demo4\20-10-23\Temp2.txt
+
+
+
+C:\Users\Lenovo\Desktop\Demo4\20-10-23>git status
+On branch main
+for website run (Ravi tambade)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+clear 
+1> sudo apt update
+2> git clone ---------------
+3> ls
+4> cd sittflstore/
+5> ls
+6> cd data
+7> ls (products.json file get created)
+8> mv products_data.json products.json
+9> ls
+10> cd .. 
+11> ls
+12> sudo apt update
+13> sudo apt install npm
+14> y
+15> Enter (Daemons using outdated libraries)
+16> npm install
+17> npm start
+    (note the no 8000)
+18> create new tab
+    copy ip address of that instance 
+    http://-------------:8000
+Your website has been run
+
+
+
+
+For Docker install
+1> mkdir xyz
+2> cd xyz
+3> sudo apt update
+4> sudo apt install docker.io
+5> y
+6> docker -v
+7> 
+
+To push git program on aws 
+git clone -------That repo address-------
+
+to install git 
+sudo apt install git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
+Bash Shell Script to print half pyramid using *
+==================================================
+*
+**
+*
+**
+***
+
+rows=4
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "* "
+  done
+  echo
+done
+
+
+-------------------------------------------------------
+Bash Shell Script to print half pyramid using numbers
+1
+12
+123
+12345
+
+number=1
+rows=5
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "$number "
+    number=$((number + 1))
+  done
+  number=1
+  echo
+done
+
+-------------------------------------------------------------------
+Bash Shell Script to print inverted half pyramid using *
+***
+**
+*
+**
+*
+
+rows=5
+for((i=rows; i>=1; i--))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "* "
+  done
+  echo
+done
+---------------------------------------------------------------------------
+Bash Shell Script to print inverted half pyramid using numbers
+12345
+1234
+123
+12
+1
+
+number=1
+rows=5
+for((i=rows; i>=1; i--))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "$number "
+    number=$((number + 1))
+  done
+  number=1
+  echo
+done
+-----------------------------------------------------------------------------------
+Bash Shell Script to print full pyramid using *
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+
+
+rows=5
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=rows - i; j++))
+  do
+    echo -n "  "
+  done
+  for((j=1; j<=2*i - 1; j++))
+  do
+    echo -n "* "
+  done
+  echo
+done
+---------------------------------------------------------------------------------------
+Bash Shell Script to print full pyramid using numbers
+        1
+      2 3 2
+    3 4 5 4 3
+  4 5 6 7 6 5 4
+5 6 7 8 9 8 7 6 5
+
+rows=5
+number=1
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=rows - i; j++))
+  do
+    echo -n "  "
+  done
+  number=$i
+  k=1
+  for((j=1; j<=2*i - 1; j++))
+  do
+    if [ $j -lt $i ];
+    then
+      echo -n "$number "
+      number=$((number + 1))
+    elif [ $j -eq $i ];
+    then
+      echo -n "$number "
+      number=$((number - 1))
+    else
+      echo -n "$number "
+      number=$((number - 1))
+    fi
+  done
+  echo
+done
+-------------------------------------------------------------------------------------
+Bash Shell Script to print Floyd's Triangle
+
+1
+2 3
+4 5 6
+7 8 9 10
+
+number=1
+rows=4
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "$number "
+    number=$((number + 1))
+  done
+  echo
+done
+-------------------------------------------------------------------------------------------
+Bash Shell Script to swap two numbers
+
+firstNumber=12
+secondNumber=24
+echo "Before Swapping"
+echo "First number: $firstNumber"
+echo "Second number: $secondNumber"
+temp=$firstNumber
+firstNumber=$secondNumber
+secondNumber=$temp
+echo "After Swapping"
+echo "First number: $firstNumber"
+echo "Second number: $secondNumber"
+------------------------------------------------------------------------------------------
+Bash Shell Script to find Factorial of a number
+n! = 1 * 2 * 3 * 4 * 5 * ... * n
+
+#Bash script to find factorial of a number
+echo -n "Enter a number: "
+read number
+factorial=1
+for(( i=1; i<=number; i++ ))
+do
+  factorial=$[ $factorial * $i ]
+done
+echo "The factorial of $number is $factorial"
+----------------------------------------------------------------------------------------------
+Bash Shell Script to check whether a number is even or odd
+
+read -p "Enter a number: " number
+if [ $((number%2)) -eq 0 ]
+then
+  echo "Number is even."
+else
+  echo "Number is odd."
+fi
+
+
+---------------_-------------------------
+Diamond pattern
+
+
+
+echo "enter the mininum number "
+read min
+echo "enter the maximum number "
+read max
+for (( i=$min;i<=$max;i++))
+do
+   for (( j=$max;j>=i;j-- ))
+   do
+   echo -n " "
+   done
+   for (( c=1;c<=i;c++ ))
+   do
+   echo -n " *"
+   sum=`expr $sum + 1`
+   done
+echo ""
+done
+d_max=`expr $max - 1`
+for (( i=$d_max;i>=$min;i--))
+do
+   for (( j=i;j<=$d_max;j++ ))
+   do
+   if [ $j -eq $d_max ]
+   then
+   echo -n " "
+   fi
+   echo -n " "
+   done
+   for (( c=1;c<=i;c++ ))
+   do
+   echo -n " *"
+   sum=`expr $sum + 1`
+   done
+echo ""
+done
+echo "Total No. : "  $sum
